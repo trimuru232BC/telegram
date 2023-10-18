@@ -209,7 +209,7 @@ def Tele(cx):
     'woocommerce_add_payment_method': '1',
 }
 
-    time.sleep(25)
+    time.sleep(2)
     response = r.post('https://www.woolroots.com/my-account/add-payment-method/', headers=headers, data=data)
     soup = BeautifulSoup(response.text, 'html.parser')
     try:  
